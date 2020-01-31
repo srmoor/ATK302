@@ -1,30 +1,30 @@
+let earth;
 
+function preload() {
+  earth = loadImage('img/earth1.jpg');
+}
 
 function setup() {
   // put setup code here
-  createCanvas(800, 800);
+  createCanvas(800, 800, WEBGL);
+
 }
 
 function draw() {
   // put drawing code here
 
-
-
   if (mouseIsPressed) {
       background(51, 51, 77);
 
-    fill(191, 128, 64);
+  fill(191, 128, 64);
     ellipse(252, 144, 202, 202);
-
-    fill('pink');
+  fill('pink');
     triangle(228, 163, 245, 180, 261, 163);
-
-    fill(191, 128, 64);
+  fill(191, 128, 64);
     triangle(174, 78, 163, 8, 208, 50);
-    fill(191, 128, 64);
+  fill(191, 128, 64);
     triangle(275, 43, 320, 8, 320, 71);
-
-    fill(102);
+  fill(102);
  rect(142, 82, 93, 15);
     fill(102);
  rect(269, 82, 93, 15);
@@ -38,12 +38,17 @@ function draw() {
     fill('black');
     ellipse(290, 122, 40, 40);
 
+    texture(earth);
+  sphere(100);
+
     fill(102,102,51);
-    ellipse(380, 520, 320, 320);
+    ellipse(380, 520, 520, 520);
 
 
 
-  } else {
+
+  }
+  else {
 background(128, 223, 255);
 
     fill(191, 128, 64);
