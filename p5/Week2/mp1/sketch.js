@@ -39,12 +39,10 @@ function draw() {
     ellipse(290, 122, 40, 40);
 
     texture(earth);
-  sphere(100);
+  sphere(240);
 
     fill(102,102,51);
     ellipse(380, 520, 520, 520);
-
-
 
 
   }
