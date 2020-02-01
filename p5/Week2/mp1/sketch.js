@@ -22,6 +22,7 @@ function draw() {
 
   textAlign(RIGHT);
   textSize(40);
+  fill('white');
   text('By night, he escapes his regular household life ', 184, 158);
   text('and plots to rule the world', 99, 190);
 
