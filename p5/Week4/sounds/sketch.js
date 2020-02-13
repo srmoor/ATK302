@@ -15,3 +15,12 @@ function setup() {
 function draw() {
 
 }
+function mouseReleased(){
+  if (rain.isPlaying()){
+    rain.pause();
+  } else{
+    rain.start();
+  }
+
+
+}
