@@ -9,20 +9,17 @@ function draw() {
   // put drawing code here
   background('purple');
 
-push();
-translate(x,0);
-translate(0,y);
-  ellipse(100,100,90,90);
-pop();
+  translate(x, 0);
+  fill('blue');
+  rect(100, 430, 50, 30);
+  fill('black');
+  ellipse(110,450,20,20);
+  fill('black');
+  ellipse(80,450,20,20);
 
-  x = x + 5 ;
+  x = x + 3;
   if (x > width) {
     x = -100;
-  }
-
- y = y + 5 ;
-  if (y > height) {
-    y = -100;
   }
 
 }
