@@ -11,11 +11,7 @@ function setup() {
 }
 
 function draw() {
-  // put drawing code here
-  fill('black');
-  rect(width/2, height/2, 50, 200);
-  fill('red');
-  ellipse(50, 20, 50, 50);
+  
 
   switch (myState) {
     case 0:

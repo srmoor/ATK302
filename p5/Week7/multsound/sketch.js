@@ -52,7 +52,7 @@ function mouseReleased() {
   song2.pause();
   song3.pause();
 
-  state++ ;
+  myState++ ;
   if (myState > 5){
     myState = 0;
   }
