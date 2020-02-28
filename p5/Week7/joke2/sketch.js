@@ -8,7 +8,7 @@ function setup() {
 
 function draw() {
   // put drawing code here
-  background('black');
+  background(255, 179, 128);
 
   switch(state) {
     case 0:
