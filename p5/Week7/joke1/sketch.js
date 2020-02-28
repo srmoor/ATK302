@@ -1,4 +1,4 @@
-var = state = 0;
+var state = 0;
 
 function setup() {
   // put setup code here
@@ -7,7 +7,7 @@ function setup() {
 
 function draw() {
   // put drawing code here
-  background('black');
+  background('blue');
 
   switch(state) {
     case 0:

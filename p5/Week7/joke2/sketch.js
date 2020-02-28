@@ -1,5 +1,5 @@
-var = state = 0;
-var = myTimer = 0;
+var state = 0;
+var myTimer = 0;
 
 function setup() {
   // put setup code here
