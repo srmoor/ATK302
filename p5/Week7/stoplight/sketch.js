@@ -1,6 +1,7 @@
 var myState = 0;
 var timer = 200;
 var x = 0;
+var velocity = 10;
 
 function setup() {
   // put setup code here
@@ -11,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-  
+
 
   switch (myState) {
     case 0:
@@ -24,6 +25,7 @@ function draw() {
         myState = 1;
         timer = 0;
       }
+      velocity = 10;
       break;
 
     case 1:
@@ -52,6 +54,11 @@ function draw() {
       break;
 
   }
-
+rect(x, 700, 50, 25);
+ellipse(x, height-100, 25,25);
+x = x + velocity ;
+if (x > width) {
+  x = 0;
+}
 
   }
