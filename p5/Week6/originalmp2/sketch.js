@@ -43,7 +43,7 @@ function draw() {
         myState = 6;
         timer = 0;
       }
-      rect(10,610, 50, 50);
+      rect(110, 210, 50, 50);
       break;
 
     case 2:
@@ -89,15 +89,37 @@ function draw() {
       text("You Win", 98, 244);
       timer = timer + 1;
       if (timer > 400) {
-        myState = 0;
+        myState = 6;
         timer = 0;
       }
       song.stop();
       uwin.play();
       break;
-
     case 6:
+      background(255, 179, 179);
+      textFont(Lobster, 98);
+      text("You Win", 98, 244);
+      timer = timer + 1;
+      if (timer > 400) {
+        myState = 0;
+        timer = 0;
+      }
+      uwin.stop();
+      break;
+    case 7:
 
+      background(179, 179, 255);
+      textFont(Lobster, 98);
+      text("You Lose, Sorry", 98, 244);
+      timer = timer + 1;
+      if (timer > 400) {
+        myState = 8;
+        timer = 0;
+      }
+      song.stop();
+      ulose.play();
+      break;
+    case 8:
       background(179, 179, 255);
       textFont(Lobster, 98);
       text("You Lose, Sorry", 98, 244);
@@ -106,9 +128,7 @@ function draw() {
         myState = 0;
         timer = 0;
       }
-      song.stop();
-      ulose.play();
-    
+      ulose.stop();
       break;
   }
 }
@@ -116,7 +136,7 @@ function draw() {
 function mouseReleased() {
   fx.play();
   myState = myState + 1;
-  if (myState > 6) {
+  if (myState > 8) {
     myState = 0;
   }
 }
