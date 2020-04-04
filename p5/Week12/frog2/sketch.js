@@ -27,7 +27,7 @@ function draw() {
       background('yellow');
       fill('black');
       textSize(30);
-      text("Welcome Shopper, you dont have much time!", width / 2, height / 2);
+      text("Welcome you dont have much time!", width / 2, height / 2);
       break;
 
     case 1:
@@ -80,7 +80,7 @@ function mouseReleased() {
       timer = maxTimer;
 
       //respawns cars
-      cars = [10];
+      cars = [];
       for (var i = 0; i < maxCars; i++) {
         cars.push(new Car());
       }
@@ -114,7 +114,7 @@ function game() {
       cars.splice(i, 1);
     }
   }
-  if (cars.length == 0) {
+  if (cars.length == 2) {
     myState = 3;
   }
   // frog
