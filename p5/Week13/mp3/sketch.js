@@ -10,11 +10,11 @@ var song2;
 
 function preload() {
   song1 = loadSound('assets/sound.mp3');
-  
+
   song1.stop();
 
   song2 = loadSound('assets/win.mp3');
-  song2.loop();
+
   song2.stop();
 
 }
@@ -61,7 +61,7 @@ function draw() {
       timer = timer - 1;
       if (timer <= 0) {
         timer = maxTimer;
-        myState = 4;
+        myState = 5;
       }
 
       break;
@@ -143,7 +143,7 @@ function game() {
     song1.stop();
     song2.play();
 
-    myState = 3;
+    myState = 4;
   }
   // frog
 
