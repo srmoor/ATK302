@@ -45,7 +45,7 @@ function draw() {
       background('yellow');
       fill('black');
       textSize(30);
-      text("Welcome you dont have much time!", width / 2, height / 2);
+      text("Welcome, you don\'t have much time!", width / 2, height / 2);
       break;
 
     case 1:
