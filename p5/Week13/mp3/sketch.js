@@ -8,6 +8,7 @@ var hand;
 var song1;
 var song2;
 
+
 function preload() {
   song1 = loadSound('assets/sound.mp3');
 
@@ -31,6 +32,7 @@ function setup() {
   frogpos = createVector(300, height - 100);
   hand = loadImage('assets/hand.png');
   item = loadImage('assets/tp.png');
+
 
   textAlign(CENTER);
   rectMode(CENTER);
@@ -130,7 +132,8 @@ function mouseReleased() {
 
 function game() {
 
-  background('lightblue');
+background('lightblue');
+
 
   for (var i = 0; i < cars.length; i++) {
     cars[i].display();
