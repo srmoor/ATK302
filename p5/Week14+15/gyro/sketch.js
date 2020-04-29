@@ -41,7 +41,7 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-  image(bugImage, 0, 0, 500, 500);
+  image(bugImage, 0, 0, 300, 300);
   //  	rect(0, 0, 100, 100) ;
   pop();
 
@@ -49,7 +49,7 @@ function draw() {
   // DECORATIONS
   // Just a bunch of text commands to display data coming in from addEventListeners
   //REMOVE WHEN DONE
-  
+
 
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('green');
