@@ -68,7 +68,7 @@ function draw() {
   noStroke();
   textSize(300);
   textAlign(CENTER);
-  text("you stink", width / 2, height / 2);
+  text("you stink", 10, 10);
 
 }
 
