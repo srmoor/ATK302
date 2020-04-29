@@ -8,6 +8,7 @@ var yPosition = 0;
 var x = 0; // acceleration data
 var y = 0;
 var z = 0;
+var gross;
 
 function setup() {
 
@@ -21,7 +22,7 @@ function setup() {
   bugImage = loadImage("assets/fly.png");
   imageMode(CENTER);
   rectMode(CENTER);
-
+gross = loadFont("assets/MB-ThinkTwice_Regular.ttf");
 }
 
 function draw() {
@@ -66,9 +67,9 @@ function draw() {
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('green');
   noStroke();
-  textSize(300);
+  textFont(gross, 97);
   textAlign(CENTER);
-  text("you stink", 10, 10);
+  text("you stink", width / 2, width / 2);
 
 }
 
